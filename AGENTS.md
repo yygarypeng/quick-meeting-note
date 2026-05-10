@@ -2,6 +2,16 @@
 
 This is an Obsidian vault for meeting notes and central todo tracking, not a code project. There are no build, test, or lint commands.
 
+## Agent Tooling
+
+- Always load the `obsidian-cli` skill and use the `obsidian` CLI for Obsidian vault operations when an equivalent CLI command exists.
+- If the `obsidian` CLI is unavailable, Obsidian is not open, or no matching CLI command exists, fall back to filesystem tools and state the fallback.
+- Load relevant Obsidian skills before working on matching files or features:
+  - `obsidian-markdown` for `.md` notes, wikilinks, callouts, properties, embeds, and tags.
+  - `obsidian-bases` for `.base` files and Bases views.
+  - `json-canvas` for `.canvas` files and Obsidian Canvas work.
+  - `obsidian-cli` for vault reads, writes, search, tasks, tags, backlinks, and live Obsidian checks.
+
 ## Active Files
 
 - `README.md` is the human manual/dashboard page, not a note capture area.
