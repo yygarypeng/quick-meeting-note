@@ -56,21 +56,21 @@ No notes yet.
 3. Fill in `Type::` using one exact value from [[#Meeting Types]].
 4. Add optional `Links::`.
 5. Write rough bullet notes under `Raw notes:`.
-6. Mark tasks with `#urgent`, `#scheduled`, `#todo`, or `#later`.
-7. Ask the assistant: `Organize QuickNote.md.`
+6. Mark tasks with `#urgent`, `#todo`, or `#later`.
+7. For scheduled work, write the date directly in the task text.
+8. Ask the assistant: `Organize QuickNote.md.`
 
 ## Task Markers
 
 | Marker | Meaning | Goes To |
 |---|---|---|
-| `#urgent` | urgent, blocker, deadline, action stop | [[ToDo#Now]] |
-| `#scheduled` | deadline task; must include `Due: MM-DD-YYYY Time:` | [[ToDo#Scheduled]] |
+| `#urgent` | urgent, blocker, action stop | [[ToDo#Now]] |
 | `#todo` | normal follow-up task | [[ToDo#Next]] |
 | `#later` | unclear, future, maybe, background work | [[ToDo#Later]] |
 
 If a task sounds urgent even without `#urgent`, it still goes to [[ToDo#Now]].
 
-If a task has a clear deadline, it goes to [[ToDo#Scheduled]] and should keep `Due: MM-DD-YYYY Time:`. Leave `Time:` blank if only the date is known.
+If a task has a clear date, it goes to [[ToDo#Scheduled]]. The assistant will add `Due: MM-DD-YYYY`; if a time is written, it will add it after the date.
 
 If a task is unclear, future, maybe, or background work, it goes to [[ToDo#Later]].
 
@@ -80,7 +80,7 @@ Ask `Clean Todo.md.` after checking or unchecking tasks.
 
 - Checked active tasks move to [[ToDo#Done]].
 - Unchecked Done tasks move back to the matching active lane.
-- Task marker decides the active lane: `#urgent` -> Now, `#scheduled` -> Scheduled, `#todo` -> Next, `#later` -> Later.
+- Task marker and dates decide the active lane: `#urgent` -> Now, clear date -> Scheduled, `#todo` -> Next, `#later` -> Later.
 - Meeting type and source-date subsections are preserved.
 
 ## Meeting Types

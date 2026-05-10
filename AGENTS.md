@@ -135,22 +135,22 @@ The raw section is archive-only; tasks inside it must still be moved to `Todo.md
 
 Classify tasks into `Todo.md` using:
 
-| Marker | Todo Board Lane |
+| Task Signal | Todo Board Lane |
 |---|---|
-| `#urgent` or sounds urgent/blocking/deadline/action stop | `Now` |
-| `#scheduled` or explicit deadline | `Scheduled` |
+| `#urgent` or sounds urgent/blocking/action stop | `Now` |
+| clear date or explicit non-urgent deadline | `Scheduled` |
 | `#todo` | `Next` |
 | `#later` or unclear/future/maybe/background | `Later` |
 
 Keep the original marker on the final todo item.
 
-For scheduled tasks, preserve clear deadlines as `Due: MM-DD-YYYY Time:`. Leave `Time:` blank if only the date is known; if the deadline is vague, keep the original wording and put the ambiguity in `Questions`.
+For scheduled tasks, preserve clear dates as `Due: MM-DD-YYYY`. If a time is explicitly known, append it after the date, e.g. `Due: MM-DD-YYYY 14:00`. Do not create a separate time field. If the deadline is vague, keep the original wording and put the ambiguity in `Questions`.
 
 Group active tasks under board lanes, then meeting-type subsections, then source-date subsections, e.g. `## Scheduled` > `### nthu-hgtd` > `#### 05-04-2026`.
 
 Use built-in Obsidian callouts for lane colors: `Now` uses `[!danger]`, `Scheduled` uses `[!warning]`, `Next` uses `[!todo]`, `Later` uses `[!quote]`, and collapsed `Done` uses `[!success]-`.
 
-When the user asks to clean `Todo.md`, move checked active tasks (`- [x]`) into `## Done`; move unchecked Done tasks (`- [ ]`) back to the matching active lane based on marker. Preserve meeting type, source date, source links, and `Due: MM-DD-YYYY Time:` fields.
+When the user asks to clean `Todo.md`, move checked active tasks (`- [x]`) into `## Done`; move unchecked Done tasks (`- [ ]`) back to the matching active lane based on marker and dates. Preserve meeting type, source date, source links, and `Due: MM-DD-YYYY` fields.
 
 Move completed or cancelled checked tasks (`- [x]`) into `## Done`, grouped by meeting type and source date inside a collapsed Obsidian callout:
 

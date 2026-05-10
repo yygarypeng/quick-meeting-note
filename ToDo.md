@@ -11,7 +11,7 @@ aliases:
 
 > [!abstract] Board Workflow
 > Check or uncheck tasks here, then ask: `Clean Todo.md.`
-> Scheduled tasks must include `Due: MM-DD-YYYY Time:`.
+> Tasks with clear dates go to Scheduled with `Due: MM-DD-YYYY`; add time only if known.
 
 ---
 ## Now
@@ -26,8 +26,8 @@ No active tasks.
 ---
 ## Scheduled
 
-> [!warning] #scheduled
-> Deadline tasks. Required format: `Due: MM-DD-YYYY Time:`. Leave `Time:` blank if the time is not known yet.
+> [!warning] Dated tasks
+> Tasks with clear dates. Use `Due: MM-DD-YYYY`; add time only if known, e.g. `Due: MM-DD-YYYY 14:00`.
 
 ### nthu-hgtd
 

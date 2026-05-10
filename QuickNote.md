@@ -11,8 +11,8 @@ aliases:
 
 > [!tip]
 > Fill this block, then ask: `Organize QuickNote.md.`
-> Use `#urgent`, `#scheduled`, `#todo`, or `#later` for tasks.
-> Scheduled tasks need a deadline: `#scheduled Task. Due: MM-DD-YYYY Time:`.
+> Use `#urgent`, `#todo`, or `#later` for tasks.
+> For scheduled work, just write the date in the task text.
 
 ---
 Date:: MM-DD-YYYY
