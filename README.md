@@ -203,20 +203,21 @@ Use path-aware wikilinks with clean aliases when linking to final records, for e
 
 ### QE
 
-No records yet.
+- [[Meetings/QE/05-06-2026 qe|05-06-2026 qe]]
 
 ### HGTD
 
+- [[Meetings/HGTD/05-05-2026 hgtd|05-05-2026 hgtd]]
 - [[Meetings/HGTD/05-04-2026 nthu-hgtd|05-04-2026 nthu-hgtd]]
 - [[Meetings/HGTD/04-27-2026 nthu-hgtd|04-27-2026 nthu-hgtd]]
 
 ### Run 3 Coupling
 
-No records yet.
+- [[Meetings/Run 3 Coupling/05-04-2026 nthu-run3coupling|05-04-2026 nthu-run3coupling]]
 
 ### Students
 
-No records yet.
+- [[Meetings/Students/05-03-2026 students|05-03-2026 students]]
 
 ## License
 

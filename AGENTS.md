@@ -12,11 +12,15 @@ This is an Obsidian vault for meeting notes and central todo tracking, not a cod
   - `json-canvas` for `.canvas` files and Obsidian Canvas work.
   - `obsidian-cli` for vault reads, writes, search, tasks, tags, backlinks, and live Obsidian checks.
 
+## Universal User Preferences
+
+- Preserve LaTeX/math notation exactly as LaTeX when cleaning notes and todos. Keep inline `$...$`, display `$$...$$`, commands such as `\bar{t}`, subscripts, and superscripts; do not convert math snippets to inline code or wrap them in backticks.
+
 ## Active Files
 
 - `README.md` is the human manual/dashboard page, not a note capture area.
 - `QuickNote.md` is the only raw note input area; the user should only need to fill `Date::`, `Type::`, optional `Links::`, and `Raw notes:`.
-- `Todo.md` is the only central todo list.
+- `ToDo.md` is the only central todo list.
 - `Meetings/` stores final cleaned meeting notes in broad category folders, e.g. `Meetings/HGTD/`.
 - `.obsidian/`, `.agents/`, and `skills-lock.json` are vault/OpenCode config; do not edit them unless explicitly managing that config.
 
@@ -108,7 +112,7 @@ tags:
 > - original bullet
 ```
 
-Tasks belong in `Todo.md`; do not add active task sections to final meeting notes.
+Tasks belong in `ToDo.md`; do not add active task sections to final meeting notes.
 
 ## Raw Note Cleanup
 
@@ -118,11 +122,11 @@ When the user asks to organize a messy meeting note:
 2. Require both `Date::` and `Type::`; if either is blank or invalid, ask before creating files.
 3. Clean it into an Obsidian meeting note with sections: `Summary`, `Notes`, `Decisions`, `Questions`, `Links`, and collapsed `Raw Quick Note`.
 4. Preserve technical details, code names, function names, commands, file names, and exact error messages.
-5. Move tasks into `Todo.md`; do not leave final tasks only in the meeting note and do not copy raw task blocks into active final-note sections.
+5. Move tasks into `ToDo.md`; do not leave final tasks only in the meeting note and do not copy raw task blocks into active final-note sections.
 6. Add a path-aware source link to every todo item, e.g. `Source: [[Meetings/HGTD/MM-DD-YYYY nthu-hgtd|MM-DD-YYYY nthu-hgtd]]`.
 7. If meaning is unclear, put it in `Questions` instead of guessing.
 8. Add the final note link to `README.md` under the matching category.
-9. After creating the meeting note and updating `Todo.md`, reset `QuickNote.md` to the blank reset block.
+9. After creating the meeting note and updating `ToDo.md`, reset `QuickNote.md` to the blank reset block.
 
 Preserve the full original `QuickNote.md` content at the end of the final meeting note under:
 
@@ -139,11 +143,11 @@ Preserve the full original `QuickNote.md` content at the end of the final meetin
 > - original bullet
 ```
 
-The raw section is archive-only; tasks inside it must still be moved to `Todo.md`.
+The raw section is archive-only; tasks inside it must still be moved to `ToDo.md`.
 
 ## Todo Classification
 
-Classify tasks into `Todo.md` using:
+Classify tasks into `ToDo.md` using:
 
 | Task Signal | Todo Board Lane |
 |---|---|
@@ -160,7 +164,7 @@ Group active tasks under board lanes, then meeting-type subsections, then source
 
 Use built-in Obsidian callouts for lane colors: `Now` uses `[!danger]`, `Scheduled` uses `[!warning]`, `Next` uses `[!todo]`, `Later` uses `[!quote]`, and collapsed `Done` uses `[!success]-`.
 
-When the user asks to clean `Todo.md`, move checked active tasks (`- [x]`) into `## Done`; move unchecked Done tasks (`- [ ]`) back to the matching active lane based on marker and dates. Preserve meeting type, source date, source links, and `Due: MM-DD-YYYY` fields.
+When the user asks to clean `ToDo.md`, move checked active tasks (`- [x]`) into `## Done`; move unchecked Done tasks (`- [ ]`) back to the matching active lane based on marker and dates. Preserve meeting type, source date, source links, and `Due: MM-DD-YYYY` fields.
 
 Move completed or cancelled checked tasks (`- [x]`) into `## Done`, grouped by meeting type and source date inside a collapsed Obsidian callout:
 
@@ -185,3 +189,5 @@ Raw notes:
 
 - 
 ```
+
+- always keep the structure coherent and correlated. Make sure the cleanness, and organizations.
