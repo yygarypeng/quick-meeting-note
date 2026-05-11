@@ -33,7 +33,6 @@ Run 3 Coupling follow-up focused on v6.1 sample availability and branch merging,
 - Are diboson and zjets available in v6.1?
 - Should the MR be merged by me or by YJ?
 - Why not blind all data in SR instead of blinding only a few entries?
-- Was `#rodo` intended to mean `#todo` for changing the signal threshold to `0.03`?
 - Is the selection "gap" due to a lack of statistics?
 - What same selection region and phase space should be used for the $t\bar{t}$ apple-to-apple comparison?
 
@@ -46,6 +45,7 @@ Run 3 Coupling follow-up focused on v6.1 sample availability and branch merging,
 ## Raw Quick Note
 
 > [!quote]- Original Quick Note
+> ```text
 > Date:: 05-04-2026
 > Type:: run3coupling
 > Links:: 
@@ -63,3 +63,4 @@ Run 3 Coupling follow-up focused on v6.1 sample availability and branch merging,
 > - The selection "gap" (different) might be due to a lack of statistics.
 > - Too much $t\bar{t}$ needs to check in the same selection region (same phase space, to do the apple -to-pple comparison)
 > - #later check the threshold blinding vs signal blinding in plotting tools
+> ```

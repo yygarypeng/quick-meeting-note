@@ -43,7 +43,7 @@ The source of truth for raw input is always [[QuickNote]]. The source of truth f
 | Path | Role |
 |---|---|
 | [[QuickNote]] | Input screen for raw meeting capture |
-| [[ToDo]] | Central task board with active and completed lanes |
+| [[ToDo]] | Central task board grouped by broad area with colored status callouts |
 | `Meetings/` | Structured meeting archive grouped by category |
 | `README.md` | App home, manual, and meeting index |
 | `AGENTS.md` | Automation rules for the AI assistant |
@@ -142,20 +142,29 @@ Clean Todo.md.
 Cleanup behavior:
 
 - Checked active tasks move to [[ToDo#Done]].
-- Unchecked Done tasks move back to the matching active lane.
-- Meeting type and source-date subsections are preserved.
+- Unchecked Done tasks move back to the matching broad area section and colored status callout.
+- Broad area, status callout, and source-date grouping are preserved.
 - Source links remain attached to todo items.
 
 ## Task Routing
 
-| Signal | Meaning | Goes To |
+| Signal | Meaning | Shown As |
 |---|---|---|
-| `#urgent` | Urgent, blocking, or action-stopping work | [[ToDo#Now]] |
-| Clear date | Scheduled work or explicit deadline | [[ToDo#Scheduled]] |
-| `#todo` | Normal follow-up task | [[ToDo#Next]] |
-| `#later` | Future, unclear, maybe, or background work | [[ToDo#Later]] |
+| `#urgent` | Urgent, blocking, or action-stopping work | `[!danger] #urgent` under the matching broad area |
+| Clear date | Scheduled work or explicit deadline | `[!warning] Scheduled` under the matching broad area |
+| `#todo` | Normal follow-up task | `[!todo] #todo` under the matching broad area |
+| `#later` | Future, unclear, maybe, or background work | `[!quote] #later` under the matching broad area |
 
-If a task sounds urgent even without `#urgent`, it still goes to [[ToDo#Now]]. If a task has a clear date, the assistant adds `Due: MM-DD-YYYY`; if a time is written, it is appended after the date.
+If a task sounds urgent even without `#urgent`, it still goes into the `[!danger] #urgent` callout. If a task has a clear date, the assistant adds `Due: MM-DD-YYYY`; if a time is written, it is appended after the date.
+
+Todo area mapping:
+
+| Exact Type | Todo Area |
+|---|---|
+| `nthu-qe`, `qe` | `QE` |
+| `nthu-hgtd`, `hgtd` | `HGTD` |
+| `nthu-run3coupling` | `Run 3 Coupling` |
+| `students` | `Students` |
 
 ## Meeting Types
 

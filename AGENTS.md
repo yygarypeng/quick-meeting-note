@@ -103,6 +103,7 @@ tags:
 ## Raw Quick Note
 
 > [!quote]- Original Quick Note
+> ```text
 > Date:: MM-DD-YYYY
 > Type:: meeting-type
 > Links:: 
@@ -110,6 +111,7 @@ tags:
 > Raw notes:
 >
 > - original bullet
+> ```
 ```
 
 Tasks belong in `ToDo.md`; do not add active task sections to final meeting notes.
@@ -134,6 +136,7 @@ Preserve the full original `QuickNote.md` content at the end of the final meetin
 ## Raw Quick Note
 
 > [!quote]- Original Quick Note
+> ```text
 > Date:: MM-DD-YYYY
 > Type:: meeting-type
 > Links:: 
@@ -141,37 +144,47 @@ Preserve the full original `QuickNote.md` content at the end of the final meetin
 > Raw notes:
 >
 > - original bullet
+> ```
 ```
 
-The raw section is archive-only; tasks inside it must still be moved to `ToDo.md`.
+The raw section is archive-only; tasks inside it must still be moved to `ToDo.md`. Store the original raw text inside a fenced `text` block within the callout so archived hashtags do not become live vault tags.
 
 ## Todo Classification
 
 Classify tasks into `ToDo.md` using:
 
-| Task Signal | Todo Board Lane |
+| Task Signal | Todo Callout |
 |---|---|
-| `#urgent` or sounds urgent/blocking/action stop | `Now` |
-| clear date or explicit non-urgent deadline | `Scheduled` |
-| `#todo` | `Next` |
-| `#later` or unclear/future/maybe/background | `Later` |
+| `#urgent` or sounds urgent/blocking/action stop | `[!danger] #urgent` |
+| clear date or explicit non-urgent deadline | `[!warning] Scheduled` |
+| `#todo` | `[!todo] #todo` |
+| `#later` or unclear/future/maybe/background | `[!quote] #later` |
 
 Keep the original marker on the final todo item.
 
+Route active tasks into broad area sections using the same category mapping as `README.md`; do not split `nthu-*` and non-`nthu-*` exact types into separate active sections:
+
+| Exact Type | Todo Area Section |
+|---|---|
+| `nthu-qe`, `qe` | `QE` |
+| `nthu-hgtd`, `hgtd` | `HGTD` |
+| `nthu-run3coupling` | `Run 3 Coupling` |
+| `students` | `Students` |
+
 For scheduled tasks, preserve clear dates as `Due: MM-DD-YYYY`. If a time is explicitly known, append it after the date, e.g. `Due: MM-DD-YYYY 14:00`. Do not create a separate time field. If the deadline is vague, keep the original wording and put the ambiguity in `Questions`.
 
-Group active tasks under board lanes, then meeting-type subsections, then source-date subsections, e.g. `## Scheduled` > `### nthu-hgtd` > `#### 05-04-2026`.
+Group active tasks under broad area sections, then colored hashtag/status callouts, then source-date subsections, e.g. `## HGTD` > `> [!todo] #todo` > `> #### 05-04-2026`.
 
-Use built-in Obsidian callouts for lane colors: `Now` uses `[!danger]`, `Scheduled` uses `[!warning]`, `Next` uses `[!todo]`, `Later` uses `[!quote]`, and collapsed `Done` uses `[!success]-`.
+Use built-in Obsidian callouts for marker colors: `#urgent` uses `[!danger]`, `Scheduled` uses `[!warning]`, `#todo` uses `[!todo]`, `#later` uses `[!quote]`, and collapsed `Done` uses `[!success]-`. Do not use separate `Now`, `Scheduled`, `Next`, or `Later` top-level board-lane sections; the broad area is the top-level active-task section.
 
-When the user asks to clean `ToDo.md`, move checked active tasks (`- [x]`) into `## Done`; move unchecked Done tasks (`- [ ]`) back to the matching active lane based on marker and dates. Preserve meeting type, source date, source links, and `Due: MM-DD-YYYY` fields.
+When the user asks to clean `ToDo.md`, move checked active tasks (`- [x]`) into `## Done`; move unchecked Done tasks (`- [ ]`) back to the matching broad area section and colored callout based on marker and dates. Preserve source date, source links, exact meeting type in source links, and `Due: MM-DD-YYYY` fields.
 
-Move completed or cancelled checked tasks (`- [x]`) into `## Done`, grouped by meeting type and source date inside a collapsed Obsidian callout:
+Move completed or cancelled checked tasks (`- [x]`) into `## Done`, grouped by broad area and source date inside a collapsed Obsidian callout:
 
 ```markdown
 > [!success]- Done
-> Completed or cancelled tasks are archived here by meeting type and source date.
-> ### nthu-hgtd
+> Completed or cancelled tasks are archived here by broad area and source date.
+> ### HGTD
 > #### 05-04-2026
 > - [x] #todo Task text. Source: [[Meetings/HGTD/MM-DD-YYYY nthu-hgtd|MM-DD-YYYY nthu-hgtd]]
 ```

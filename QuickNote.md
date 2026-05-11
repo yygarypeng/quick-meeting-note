@@ -11,6 +11,7 @@ aliases:
 
 > [!tip]
 > Fill this block, then ask: `Organize QuickNote.md.`
+> Valid types: `nthu-qe`, `qe`, `nthu-hgtd`, `hgtd`, `nthu-run3coupling`, `students`.
 > Use `#urgent`, `#todo`, or `#later` for tasks.
 > For scheduled work, just write the date in the task text.
 
