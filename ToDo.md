@@ -21,6 +21,11 @@ aliases:
 > [!todo] #todo
 > Normal follow-up work.
 >
+> #### 05-11-2026
+>
+> - [ ] #todo Retrain the model with Danning's splitting and send PCRES IO to Yulei. Source: [[Meetings/QE/05-11-2026 qe|05-11-2026 qe]]
+> - [ ] #todo Follow up on the comparison of Evanet. Source: [[Meetings/QE/05-11-2026 qe|05-11-2026 qe]]
+>
 > #### 05-06-2026
 >
 > - [ ] #todo Plot angle ang+ang and ang-ang to compare to the classical method. Source: [[Meetings/QE/05-06-2026 qe|05-06-2026 qe]]

@@ -212,6 +212,7 @@ Use path-aware wikilinks with clean aliases when linking to final records, for e
 
 ### QE
 
+- [[Meetings/QE/05-11-2026 qe|05-11-2026 qe]]
 - [[Meetings/QE/05-06-2026 qe|05-06-2026 qe]]
 
 ### HGTD
