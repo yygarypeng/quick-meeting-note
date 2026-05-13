@@ -217,12 +217,14 @@ Use path-aware wikilinks with clean aliases when linking to final records, for e
 
 ### HGTD
 
+- [[Meetings/HGTD/05-12-2026 hgtd|05-12-2026 hgtd]]
 - [[Meetings/HGTD/05-05-2026 hgtd|05-05-2026 hgtd]]
 - [[Meetings/HGTD/05-04-2026 nthu-hgtd|05-04-2026 nthu-hgtd]]
 - [[Meetings/HGTD/04-27-2026 nthu-hgtd|04-27-2026 nthu-hgtd]]
 
 ### Run 3 Coupling
 
+- [[Meetings/Run 3 Coupling/05-12-2026 nthu-run3coupling|05-12-2026 nthu-run3coupling]]
 - [[Meetings/Run 3 Coupling/05-04-2026 nthu-run3coupling|05-04-2026 nthu-run3coupling]]
 
 ### Students

@@ -23,7 +23,7 @@ aliases:
 >
 > #### 05-11-2026
 >
-> - [ ] #todo Retrain the model with Danning's splitting and send PCRES IO to Yulei. Source: [[Meetings/QE/05-11-2026 qe|05-11-2026 qe]]
+> - [x] #todo Retrain the model with Danning's splitting and send PCRES IO to Yulei. Source: [[Meetings/QE/05-11-2026 qe|05-11-2026 qe]]
 > - [ ] #todo Follow up on the comparison of Evanet. Source: [[Meetings/QE/05-11-2026 qe|05-11-2026 qe]]
 >
 > #### 05-06-2026
@@ -48,13 +48,31 @@ aliases:
 > [!danger] #urgent
 > Blocking, deadline-critical, or action-stop work.
 >
+> #### 05-12-2026
+>
+> - [ ] #urgent Do not expose passwords to AI by setting `.env`. Source: [[Meetings/HGTD/05-12-2026 hgtd|05-12-2026 hgtd]]
+>
 > #### 05-05-2026
 >
-> - [ ] #urgent Measure data retrieval time from the DB and comparison time. Source: [[Meetings/HGTD/05-05-2026 hgtd|05-05-2026 hgtd]]
-> - [ ] #urgent Discuss with YJ about the `QuerySet` meaning. Source: [[Meetings/HGTD/05-05-2026 hgtd|05-05-2026 hgtd]]
+> - [x] #urgent Measure data retrieval time from the DB and comparison time. Source: [[Meetings/HGTD/05-05-2026 hgtd|05-05-2026 hgtd]]
+> - [x] #urgent Discuss with YJ about the `QuerySet` meaning. Source: [[Meetings/HGTD/05-05-2026 hgtd|05-05-2026 hgtd]]
+
+> [!warning] Scheduled
+> Date-specific or explicit-deadline work.
+>
+> #### 05-12-2026
+>
+> - [ ] #todo Report time in tonight's meeting. Due: 05-12-2026. Source: [[Meetings/HGTD/05-12-2026 hgtd|05-12-2026 hgtd]]
 
 > [!todo] #todo
 > Normal follow-up work.
+>
+> #### 05-12-2026
+>
+> - [ ] #todo Try to add a snippet to split a large zip file uploaded by Mei. Source: [[Meetings/HGTD/05-12-2026 hgtd|05-12-2026 hgtd]]
+> - [ ] #todo Rename front-end name from `batch upload sensor....` to `Wafer/sensor serial number registration check.` Source: [[Meetings/HGTD/05-12-2026 hgtd|05-12-2026 hgtd]]
+> - [ ] #todo `(X) IV -> no existing wafer/sensors serial numbers registered`. Source: [[Meetings/HGTD/05-12-2026 hgtd|05-12-2026 hgtd]]
+> - [ ] #todo After checking, register to DB as the next step; look at the batch part file; only `loc` and `manyfator` are needed, with the kind of parts hard-coded. Source: [[Meetings/HGTD/05-12-2026 hgtd|05-12-2026 hgtd]]
 >
 > #### 05-04-2026
 >
@@ -77,9 +95,13 @@ aliases:
 > [!danger] #urgent
 > Blocking, deadline-critical, or action-stop work.
 >
+> #### 05-12-2026
+>
+> - [x] #urgent Do not include local config in the central repo. Source: [[Meetings/Run 3 Coupling/05-12-2026 nthu-run3coupling|05-12-2026 nthu-run3coupling]]
+>
 > #### 05-04-2026
 >
-> - [ ] #urgent Merge to the v6.1 branch. Source: [[Meetings/Run 3 Coupling/05-04-2026 nthu-run3coupling|05-04-2026 nthu-run3coupling]]
+> - [x] #urgent Merge to the v6.1 branch. Source: [[Meetings/Run 3 Coupling/05-04-2026 nthu-run3coupling|05-04-2026 nthu-run3coupling]]
 > - [ ] #urgent Clarify why not all data in SR are blinded, and why only a few entries are blinded. Source: [[Meetings/Run 3 Coupling/05-04-2026 nthu-run3coupling|05-04-2026 nthu-run3coupling]]
 
 > [!todo] #todo
@@ -88,7 +110,7 @@ aliases:
 > #### 05-04-2026
 >
 > - [ ] #todo Check whether diboson and zjets are available in v6.1. Source: [[Meetings/Run 3 Coupling/05-04-2026 nthu-run3coupling|05-04-2026 nthu-run3coupling]]
-> - [ ] #todo Check with YJ whether the MR should be merged by me or by YJ. Source: [[Meetings/Run 3 Coupling/05-04-2026 nthu-run3coupling|05-04-2026 nthu-run3coupling]]
+> - [x] #todo Check with YJ whether the MR should be merged by me or by YJ. Source: [[Meetings/Run 3 Coupling/05-04-2026 nthu-run3coupling|05-04-2026 nthu-run3coupling]]
 > - [ ] #todo Change signal threshold to `0.03`; previous threshold was too high. Source: [[Meetings/Run 3 Coupling/05-04-2026 nthu-run3coupling|05-04-2026 nthu-run3coupling]]
 > - [ ] #todo Plot $m_T$ to check the selections. Source: [[Meetings/Run 3 Coupling/05-04-2026 nthu-run3coupling|05-04-2026 nthu-run3coupling]]
 > - [ ] #todo Check the excess $t\bar{t}$ in the same selection region and same phase space for an apple-to-apple comparison. Source: [[Meetings/Run 3 Coupling/05-04-2026 nthu-run3coupling|05-04-2026 nthu-run3coupling]]
